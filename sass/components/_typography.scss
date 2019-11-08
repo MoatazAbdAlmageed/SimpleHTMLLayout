@@ -1,1 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+h1,h2,h3,h4,h5,h6 {
+  color: darken($dark, 30);
+  padding: 10px 0;
+}

@@ -1,7 +1,7 @@
 {
-  "name": "elzerowebschoolcss3",
+  "name": "SimpleHTMLLayout",
   "version": "1.0.0",
-  "description": "Learn CSS3",
+  "description": "Elzero Web School",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3.git"
   },
-  "author": "",
+  "author": "MoaatzWorld",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3/issues"
