@@ -1,0 +1,28 @@
+{
+  "name": "elzerowebschoolcss3",
+  "version": "1.0.0",
+  "description": "Learn CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "livereload": "./node_modules/.bin/lite-server",
+    "sass": "./node_modules/.bin/sass",
+    "dev:watch": "concurrently  \"  sass --watch sass:css --style compressed \" \" npm run livereload  \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3/issues"
+  },
+  "homepage": "https://github.com/MoatazAbdAlmageed/ElzeroWebSchoolCSS3#readme",
+  "keywords": [],
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "lite-server": "^2.5.4",
+    "sass": "^1.23.3"
+  }
+}

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=McLaren&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.box {
+  background: #f8f8f8;
+  color: #2c2c2c;
+  padding: 30px;
+  height: 300px;
+  transition: all 0.5s ease 0s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 40px 0;
+}
+.box:hover {
+  color: #2c2c2c;
+  background: #e3b04b;
+  overflow: visible;
+  white-space: initial;
+  cursor: crosshair;
+  word-wrap: break-word;
+  /* use this to break words like urls vs white-space normal (should have space) */
+}
+
+.row {
+  width: 100%;
+  margin: 10px 0;
+  clear: both;
+}
+
+.col {
+  width: 30%;
+  float: left;
+  margin: 0 20px;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: black;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: #e3b04b;
+  color: #f8f8f8;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  height: 70px;
+  width: 70px;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #f8f8f8;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+.navigation {
+  height: 70px;
+  background: black;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+body {
+  background: #2c2c2c;
+  color: #f8f8f8;
+  text-align: center;
+  font-family: "McLaren", cursive;
+}
+
+.radius1 {
+  border-radius: 80px 0 80px 80px;
+}
+
+.radius2 {
+  border-radius: 80px 0 80px 0;
+}
+
+.shadow {
+  box-shadow: 10px 10px 5px 0px #242424;
+}
+.shadow:hover {
+  box-shadow: 10px 10px 5px 0px #291d06;
+}
+
+h2 {
+  font-size: 30px;
+  text-shadow: 2px -1px 1px #2c2c2c;
+}
+
+table, th, td {
+  border: 1px solid #e3b04b;
+  border-collapse: collapse;
+}
+
+/*# sourceMappingURL=main.css.map */
