@@ -1,7 +1,7 @@
 ### Learn Html in Arabic #24 - Training - Create a Simple Layout
 
 ## Demo 
-https://codepen.io/Moataz-Mohammady/pen/RwwJNvY
+https://codepen.io/Moataz-Mohammady/full/RwwJNvY
 
 ## Tutorial 
 https://www.youtube.com/watch?v=GuEIJo3KOJY&list=PLDoPjvoNmBAwClZ1PDcjWilxp9YERUbNt&index=24
